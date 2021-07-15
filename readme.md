@@ -1,4 +1,4 @@
-# Hello Elementor Child 
+# Hello Digitizer
 
 Contributors: elemntor, KingYes, ariel.k, jzaltzberg, mati1000, bainternet
 Requires at least: WordPress 4.7
@@ -10,9 +10,9 @@ License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
 
-The Hello Elementor Child Theme is a starter blank child theme for [Hello Elementor](https://wordpress.org/themes/hello-elementor/) theme.
+The Hello Digitizer Theme is a starter blank child theme for [Hello Elementor](https://wordpress.org/themes/hello-elementor/) theme.
 
-***Hello Elementor*** is distributed under the terms of the GNU GPL v3 or later.
+***Hello Digitizer*** is distributed under the terms of the GNU GPL v3 or later.
 
 ## Description
 
@@ -40,7 +40,7 @@ However, if you have a particular need to adapt this theme, please read on.
 
 **Does this theme support any plugins?**
 
-Hello Elementor includes support for WooCommerce.
+Hello Digitizer includes support for WooCommerce.
 
 **Can Font Styles be added thru the theme's css file?**
 
@@ -51,7 +51,7 @@ Yes, ***but*** best practice is to use the styling capabilities in the Elementor
 This theme, like WordPress, is licensed under the GPL.
 Use it as your springboard to building a site with ***Elementor***.
 
-Hello Elementor bundles the following third-party resources:
+Hello Digitizer bundles the following third-party resources:
 
 Font Awesome icons for theme screenshot
 License: SIL Open Font License, version 1.1.
