@@ -24,6 +24,7 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
 
 //*** Digitizer Scripts ***
 //====================
+// More Tips: https://elementor.com/help/hello-theme-tips/
 
 // Disable plugin auto-update email notification
 add_filter('auto_plugin_update_send_email', '__return_false');
