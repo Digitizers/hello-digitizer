@@ -1,4 +1,4 @@
-=== Hello Elementor Child ===
+# Hello Elementor Child 
 
 Contributors: elemntor, KingYes, ariel.k, jzaltzberg, mati1000, bainternet
 Requires at least: WordPress 4.7
@@ -14,7 +14,7 @@ The Hello Elementor Child Theme is a starter blank child theme for [Hello Elemen
 
 ***Hello Elementor*** is distributed under the terms of the GNU GPL v3 or later.
 
-== Description ==
+## Description
 
 A basic, plain-vanilla, lightweight theme, best suited for building your site using Elementor page builder.
 
