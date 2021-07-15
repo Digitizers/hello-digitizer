@@ -22,21 +22,21 @@ This theme resets the WordPress environment and prepares it for smooth operation
 
 Screenshot's images & icons are licensed under: Creative Commons (CC0), https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
-== Installation ==
+## Installation 
 
 1. In your admin panel, go to Appearance > Themes and click the 'Add New' button.
 2. Click 'Upload theme' and upload the zipped child
 3. Click on the 'Activate' button to use your new theme right away.
 4. Navigate to Elementor and start building your site.
 
-== Customizations ==
+## Customizations 
 
 Most users will not need to edit the files for customizing this theme.
 To customize your site's appearance, simply use ***Elementor***.
 
 However, if you have a particular need to adapt this theme, please read on.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions 
 
 **Does this theme support any plugins?**
 
@@ -46,7 +46,7 @@ Hello Elementor includes support for WooCommerce.
 
 Yes, ***but*** best practice is to use the styling capabilities in the Elementor plugin.
 
-== Copyright ==
+## Copyright 
 
 This theme, like WordPress, is licensed under the GPL.
 Use it as your springboard to building a site with ***Elementor***.
@@ -61,7 +61,7 @@ Image for theme screenshot, Copyright Jason Blackeye
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://stocksnap.io/photo/4B83RD7BV9
 
-== Changelog ==
+## Changelog 
 
-= 1.0.0 - 2019-05-23 =
+### 1.0.0 - 2019-05-23
 * Initial Public Release
