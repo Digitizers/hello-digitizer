@@ -1,0 +1,53 @@
+// Reorder Multiple Columns in Elementor 
+function ben_add_responsive_column_order( $element, $args ) {
+	$element->add_responsive_control(
+		'responsive_column_order',
+		[
+			'label' => __( 'Responsive Column Order', 'ben-elementor-extras' ),
+			'type' => \Elementor\Controls_Manager::NUMBER,
+			'separator' => 'before',
+			'selectors' => [
+				'{{WRAPPER}}' => '-webkit-order: {{VALUE}}; -ms-flex-order: {{VALUE}}; order: {{VALUE}};',
+			],
+		]
+	);
+}
+add_action( 'elementor/element/column/layout/before_section_end', 'ben_add_responsive_column_order', 10, 2 );
+
+
+// Elementor Telephone Validation Formatting 
+// https://github.com/elementor/elementor/issues/5738
+add_action( 'elementor_pro/forms/validation/tel', function( $field, $record, $ajax_handler ) {
+
+	// Match this format XXXXXXXXX, 123456789
+
+	if ( preg_match( '/[0-9]{9}/', $field['value'] ) !== 1 ) {
+		$ajax_handler->add_error( $field['id'], 'Please make sure the phone number is in XXXXXXXXX format, eg: 123456789' );
+	}
+}, 10, 3 );
+
+// Remove/change the delay of Elementor's drop-down menu
+add_action( 'wp_footer', function () { ?>
+<script>
+jQuery(document).ready(function($) {
+   // Get the menu instance
+   // Ultimately smartmenus is expecting a <ul> input, so you need to target the <ul> of the drop-down you're trying to affect.
+  var $menu = $('.elementor-nav-menu:first');
+ 
+  // Get rid of the existing menu
+  $menu.smartmenus('destroy');
+ 
+  // Re-instantiate the new menu, with no delay settings
+  $menu.smartmenus( {
+      subIndicatorsText: '',
+      subIndicatorsPos: 'append',
+      subMenusMaxWidth: '1000px',
+      hideDuration: 200, // the length of the fade-out animation
+      hideTimeout: 150, // timeout before hiding the sub menus
+      showTimeout: 0,   // timeout before showing the sub menus
+  });
+ 
+});
+ 
+</script>
+<?php } );
