@@ -1,4 +1,5 @@
 // Reorder Multiple Columns in Elementor 
+//========================
 function ben_add_responsive_column_order( $element, $args ) {
 	$element->add_responsive_control(
 		'responsive_column_order',
@@ -14,7 +15,6 @@ function ben_add_responsive_column_order( $element, $args ) {
 }
 add_action( 'elementor/element/column/layout/before_section_end', 'ben_add_responsive_column_order', 10, 2 );
 
-
 // disable gutenberg  for posts
 //========================
 add_filter('use_block_editor_for_post', '__return_false', 10);
@@ -22,7 +22,6 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 // disable gutenberg  for post types
 //===========================
 add_filter('use_block_editor_for_post_type', '__return_false', 10);
-
 
 /***** VCF Support *****/
 //===================
@@ -33,13 +32,11 @@ function _enable_vcard_upload( $mime_types ){
 }
 add_filter('upload_mimes', '_enable_vcard_upload' );
 
-
 /***** Shorten Post/Page link  *****/
 //============================
 add_filter( 'get_shortlink', function ( $shortlink ) {
     return $shortlink;
 });
-
 
 /***** Allow SVG *****/
 //===================
@@ -76,8 +73,6 @@ function fix_svg() {
 }
 add_action( 'admin_head', 'fix_svg' );
 
-
-
 // Elementor Form Telephone Number Validition
 //======================================
 add_action( 'elementor_pro/forms/validation/tel', function( $field, $record, $ajax_handler ) { 	
@@ -87,12 +82,9 @@ add_action( 'elementor_pro/forms/validation/tel', function( $field, $record, $aj
 	}
  	}, 10, 3 );
 	 
-
-
 //******--- Remove Google Fonts ---******
 //===============================
 add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
-
 
 //******--- Remove Font Awesome ---*****
 //===============================
@@ -102,14 +94,12 @@ add_action( 'elementor/frontend/after_register_styles',function() {
 	}
 }, 20 );
 
-
 //*****---  Remove Eicons:  ---*****
 //==========================
 add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet', 20 ); 
 function remove_default_stylesheet() { 
 	wp_deregister_style( 'elementor-icons' ); 
 }
-
 
 //*****---   Remove Gutenberg Block Library CSS from loading on the frontend  ---*****
 //===================================================================
@@ -119,7 +109,6 @@ function smartwp_remove_wp_block_library_css(){
 }
 add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css' );
 
-
 // remove wp version number from scripts and styles
 function remove_css_js_version( $src ) {
     if( strpos( $src, '?ver=' ) )
@@ -128,7 +117,6 @@ function remove_css_js_version( $src ) {
 }
 add_filter( 'style_loader_src', 'remove_css_js_version', 9999 );
 add_filter( 'script_loader_src', 'remove_css_js_version', 9999 );
-
 
 // remove wp version number from head and rss
 function artisansweb_remove_version() {
