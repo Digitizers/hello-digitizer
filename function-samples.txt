@@ -14,7 +14,6 @@ function ben_add_responsive_column_order( $element, $args ) {
 }
 add_action( 'elementor/element/column/layout/before_section_end', 'ben_add_responsive_column_order', 10, 2 );
 
-
 // Elementor Telephone Validation Formatting 
 // https://github.com/elementor/elementor/issues/5738
 add_action( 'elementor_pro/forms/validation/tel', function( $field, $record, $ajax_handler ) {
