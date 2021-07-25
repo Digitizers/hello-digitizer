@@ -164,3 +164,11 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 // 	return $existing_mimes;
 // }
 // add_filter( 'mime_types', 'webp_upload_mimes' );
+
+// // Hide comments "URL" field
+// add_filter('comment_form_default_fields', 'unset_url_field');
+// function unset_url_field($fields){
+//     if(isset($fields['url']))
+//        unset($fields['url']);
+//        return $fields;
+// }
