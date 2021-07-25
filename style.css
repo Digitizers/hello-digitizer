@@ -13,7 +13,51 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 */
 
 /* Hide Title & Description */
-/* .hello_elementor_page_title: {display: none;} */
-/* .entry-title {display: none !important;} */
-/* .site-title {display: none !important;} */
-/* .site-description {display: none !important;} */
+/* .hello_elementor_page_title {
+    display: none;
+}
+.entry-title {
+    display: none !important;
+}
+.site-title {
+    display: none !important;
+}
+.site-description {
+    display: none !important;
+} */
+
+/* Comments Textarea & Input  */
+/* form#commentform > p:not(.form-submit) textarea, form#commentform > p:not(.form-submit) input:not(#wp-comment-cookies-consent) {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #000;
+} */
+
+/* Comments Submit button */
+/* selector form#commentform input#submit {
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #000000;
+    border: 1px solid #000000!important;
+    transition: .3s all;
+    padding: 10px 30px;
+    border-radius: 0;
+}
+selector form#commentform input#submit:hover {
+    color: #000000;
+    background-color: #ffffff !important;
+} */
+
+/* Comments */
+/* section#comments li.comment.even > article {
+    background-color: #f9f9f9;
+}
+body.rtl #comments .comment .comment-body, body.rtl #comments .pingback .comment-body {
+    padding: 30px;
+} */
+
+/* Comments Reply Link */
+/* .comment-reply-link {
+    font-size: 14px;
+    text-decoration: underline !important;
+} */
