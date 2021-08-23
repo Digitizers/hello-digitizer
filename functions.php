@@ -41,6 +41,15 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 	return true;
 }
 
+// // HTTP Security Headers
+// header('X-Frame-Options: SAMEORIGIN');
+// header('X-XSS-Protection: 1; mode=block');
+// header('X-Content-Type-Options: nosniff');
+// header('Strict-Transport-Security:max-age=31536000; includeSubdomains; preload');
+// @ini_set('session.cookie_httponly', true);
+// @ini_set('session.cookie_secure', true);
+// @ini_set('session.use_only_cookies', true);
+
 // // Reorder Multiple Columns in Elementor 
 // function ben_add_responsive_column_order( $element, $args ) {
 // 	$element->add_responsive_control(
