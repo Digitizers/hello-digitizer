@@ -87,28 +87,22 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 
 // /***** Allow SVG *****/
 // add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
-
 //   global $wp_version;
 //   if ( $wp_version !== '4.7.1' ) {
 //      return $data;
 //   }
-
 //   $filetype = wp_check_filetype( $filename, $mimes );
-
 //   return [
 //       'ext'             => $filetype['ext'],
 //       'type'            => $filetype['type'],
 //       'proper_filename' => $data['proper_filename']
 //   ];
-
 // }, 10, 4 );
-
 // function cc_mime_types( $mimes ){
 //   $mimes['svg'] = 'image/svg+xml';
 //   return $mimes;
 // }
 // add_filter( 'upload_mimes', 'cc_mime_types' );
-
 // function fix_svg() {
 //   echo '<style type="text/css">
 //         .attachment-266x266, .thumbnail img {
@@ -125,10 +119,17 @@ function wpb_stop_update_emails( $send, $type, $core_update, $result ) {
 // 	if ( preg_match( '/[0-9]{10}/', $field['value'] ) !== 1 ) { 		
 // 	$ajax_handler->add_error( $field['id'], 'הזן טלפון חוקי ללא מקף או רווח' ); 	
 // 	}
-//  	}, 10, 3 );
-	 
+//  	}, 10, 3 );	 
 // //******--- Remove Google Fonts ---******
 // add_filter( 'elementor/frontend/print_google_fonts', '__return_false' );
+
+/* //******--- Preconnect Google Fonts ---******
+// function digitizer_preconnect() { ?>
+//     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+// <?php
+// }
+// add_action('wp_head', 'digitizer_preconnect', 0);
+*/
 
 // //******--- Remove Font Awesome ---*****
 // add_action( 'elementor/frontend/after_register_styles',function() {
