@@ -39,7 +39,7 @@ activates it. To do it by hand:
 ```
 git remote add upstream https://github.com/elementor/hello-theme-child.git
 git fetch upstream
-git diff master upstream/master -- functions.php
+git diff HEAD upstream/master -- functions.php
 ```
 
 Take upstream's `functions.php` as it stands. `style.css` differs only in the
