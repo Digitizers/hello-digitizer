@@ -49,4 +49,10 @@ header block, so merge that by hand and leave the Digitizer identity in place.
 
 Distributed under the GPL, like WordPress and like the theme it forks.
 
-The screenshot's images and icons are Creative Commons (CC0).
+`screenshot.png` came from Elementor with the fork and has never been
+replaced, so its third-party notices are upstream's and still apply:
+
+- Font Awesome icons, under the SIL Open Font License 1.1 —
+  https://fontawesome.com/v4.7.0/
+- Photograph by Jason Blackeye, CC0 1.0 Universal —
+  https://stocksnap.io/photo/4B83RD7BV9
