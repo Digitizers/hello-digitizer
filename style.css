@@ -1,63 +1,15 @@
 /* 
 Theme Name: Hello Digitizer
 Theme URI: https://github.com/Digitizers/hello-digitizer
-Description: Hello Digitizer is a child theme of Hello Elementor, created by Digitizer team
+Description: Hello Digitizer is a child theme of Hello Elementor, created by the Digitizer team
 Author:  Digitizer
 Author URI: https://www.digitizer.co.il/
 Template: hello-elementor
-Version: 1.0.1
+Version: 2.0.0
 Text Domain: hello-elementor-child
 License: GNU General Public License v3 or later.
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
 */
 
-/* Hide Title & Description */
-/* .hello_elementor_page_title {
-    display: none;
-}
-.entry-title {
-    display: none !important;
-}
-.site-title {
-    display: none !important;
-}
-.site-description {
-    display: none !important;
-} */
-
-/* Comments Textarea & Input  */
-/* form#commentform > p:not(.form-submit) textarea, form#commentform > p:not(.form-submit) input:not(#wp-comment-cookies-consent) {
-    width: 100%;
-    border-radius: 0;
-    border: 1px solid #000;
-} */
-
-/* Comments Submit button */
-/* selector form#commentform input#submit {
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #000000;
-    border: 1px solid #000000!important;
-    transition: .3s all;
-    padding: 10px 30px;
-    border-radius: 0;
-}
-selector form#commentform input#submit:hover {
-    color: #000000;
-    background-color: #ffffff !important;
-} */
-
-/* Comments */
-/* section#comments li.comment.even > article {
-    background-color: #f9f9f9;
-}
-body.rtl #comments .comment .comment-body, body.rtl #comments .pingback .comment-body {
-    padding: 30px;
-} */
-
-/* Comments Reply Link */
-/* .comment-reply-link {
-    font-size: 14px;
-    text-decoration: underline !important;
-} */
+/* Add your custom styles here */

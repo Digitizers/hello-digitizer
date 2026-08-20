@@ -1,67 +1,52 @@
 # Hello Digitizer
 
-Contributors: elemntor, KingYes, ariel.k, jzaltzberg, mati1000, bainternet
-Requires at least: WordPress 4.7
-Tested up to: WordPress 5.2
-Stable tag: 1.0.0
-Version: 1.0.1
-Requires PHP: 5.4
-License: GNU General Public License v3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+A blank child theme of [Hello Elementor](https://wordpress.org/themes/hello-elementor/),
+used as the starting point for Digitizer client sites. It is a fork of
+[elementor/hello-theme-child](https://github.com/elementor/hello-theme-child)
+and tracks it: the only differences are the theme header and this readme.
 
-The Hello Digitizer Theme is a starter blank child theme for [Hello Elementor](https://wordpress.org/themes/hello-elementor/) theme.
+- **Version:** 2.0.0 (in step with upstream)
+- **Requires:** WordPress 5.9+, PHP 5.6+, and the Hello Elementor parent theme
+- **License:** GNU General Public License v3 or later
 
-***Hello Digitizer*** is distributed under the terms of the GNU GPL v3 or later.
+## What is in it
 
-## Description
+`functions.php` loads `style.css` after the parent's stylesheet, and nothing
+else. That is the whole theme, and it is meant to stay that way.
 
-A basic, plain-vanilla, lightweight theme, best suited for building your site using Elementor page builder.
+Site behaviour belongs in **Digitizer Pro Tools**, where it is a toggle on a
+screen that the next person can find, rather than a snippet buried in a theme
+file that a theme change would take with it. Anything this theme used to carry
+is in [SNIPPETS.md](SNIPPETS.md), with a note on which Digitizer Pro Tools
+module replaced it.
 
-This theme resets the WordPress environment and prepares it for smooth operation of Elementor.
+Per-site CSS goes at the bottom of `style.css` on that site, or - better -
+into Elementor, where the person maintaining the site will look for it.
 
-Screenshot's images & icons are licensed under: Creative Commons (CC0), https://creativecommons.org/publicdomain/zero/1.0/legalcode
+## Installation
 
-## Installation 
+Digitizer Pro Tools' Onboarding wizard installs this theme and its parent, and
+activates it. To do it by hand:
 
-1. In your admin panel, go to Appearance > Themes and click the 'Add New' button.
-2. Click 'Upload theme' and upload the zipped child
-3. Click on the 'Activate' button to use your new theme right away.
-4. Navigate to Elementor and start building your site.
+1. Install and activate Hello Elementor first; a child theme without its
+   parent leaves the site with no templates.
+2. Appearance > Themes > Add New > Upload Theme, and upload this repository's
+   ZIP.
+3. Activate.
 
-## Customizations 
+## Keeping up with upstream
 
-Most users will not need to edit the files for customizing this theme.
-To customize your site's appearance, simply use ***Elementor***.
+```
+git remote add upstream https://github.com/elementor/hello-theme-child.git
+git fetch upstream
+git diff master upstream/master -- functions.php
+```
 
-However, if you have a particular need to adapt this theme, please read on.
+Take upstream's `functions.php` as it stands. `style.css` differs only in the
+header block, so merge that by hand and leave the Digitizer identity in place.
 
-## Frequently Asked Questions 
+## Copyright
 
-**Does this theme support any plugins?**
+Distributed under the GPL, like WordPress and like the theme it forks.
 
-Hello Digitizer includes support for WooCommerce.
-
-**Can Font Styles be added thru the theme's css file?**
-
-Yes, ***but*** best practice is to use the styling capabilities in the Elementor plugin.
-
-## Copyright 
-
-This theme, like WordPress, is licensed under the GPL.
-Use it as your springboard to building a site with ***Elementor***.
-
-Hello Digitizer bundles the following third-party resources:
-
-Font Awesome icons for theme screenshot
-License: SIL Open Font License, version 1.1.
-Source: https://fontawesome.com/v4.7.0/
-
-Image for theme screenshot, Copyright Jason Blackeye
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/4B83RD7BV9
-
-## Changelog 
-
-### 1.0.0 - 2019-05-23
-* Initial Public Release
+The screenshot's images and icons are Creative Commons (CC0).
